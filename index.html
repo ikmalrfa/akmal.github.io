@@ -1,1 +1,914 @@
-<html lang="en" style="--vh:6.25px;">  <head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="icon" type="image/jpg" href="https://d.top4top.io/p_2003qbl051.png">    <title> Akmal Rafa Home Page </title>    <meta name="description" content="Damn, this is my ugly drawing page">    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;display=swap" rel="stylesheet">    <link rel="manifest" href="manifest.json">   </head>   <!-- ini untuk halaman web pribadi -->   <body>    <div class="content">     <div class="con-user">      <div class="avatar">       <img src="https://c.top4top.io/p_2003iz27m0.png" alt="">      </div>      <div class="title">       <h1> Akmal Rafa M </h1>       <p> Oh hey bro, <br>welcome &amp; to my ugly homepage. <a target="_blank" href="">I hate you</a> </p>      </div>     </div>     <div class="con-menu">      <button onclick="handleClick(event, 'con-links')" class="active"> Activity </button>      <button onclick="handleClick(event, 'con-posts')"> Post </button>     </div>     <div class="con-contents" style="height: 379px;">      <div class="con-links" style="height: 379px;">       <a target="_blank" href="https://www.instagram.com/_akmrfa/"> <i class="bx bxl-instagram-alt"></i> <span> Instagram </span> </a>       <a target="_blank" href="index.php"> <i class="bx bx-home"></i> <span> Home </span> </a>       <a target="_blank" href="https://defxploit.blogspot.com/"> <i class="bx bxl-blogger"></i> <span> Blog </span> </a>       <a target="_blank" href="https://github.com/ikmalrfa/"> <i class="bx bxl-github"></i> <span> Github </span> </a>        <a target="_blank" href="https://akmal.github.io/"> <i class="bx bx-code"></i> <span> Website II </span> </a>      </div>      <div class="con-posts" style="height: 379px;">       <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">         <img src="https://e.top4top.io/p_2003tcyes5.png" alt="">        </div>        <footer>         <h3> <i class="bx bx-drink"></i> i hate you bro</h3>         <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://f.top4top.io/p_2003jzc586.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://d.top4top.io/p_2003ywiao4.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://b.top4top.io/p_20034u4y42.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://c.top4top.io/p_2003qw5ez3.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://a.top4top.io/p_2003x8q6e1.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>        <div class="con-posts" style="height: 379px;">        <a class="post" target="_blank" href="https://instagram.com/_akmrfa">        <div class="con-file">        <img src="https://l.top4top.io/p_2003z6a940.jpg" alt="">        </div>        <footer>        <h3> <i class="bx bx-drink"></i> i hate you bro</h3>        <p></p>        </footer>      </div>     </div>    </div>    <script>     const user = document.querySelector('.con-user')     const menu = document.querySelector('.con-menu')     const contents = document.querySelector('.con-contents')     const links = document.querySelector('.con-contents .con-links')     const posts = document.querySelector('.con-contents .con-posts')     window.addEventListener("load", function(event) {         const vh = window.innerHeight * 0.01         document.documentElement.style.setProperty('--vh', `${vh}px`)          setTimeout(function () {         window.scrollTo(0, 1)         }, 0)         const h = window.innerHeight - menu.clientHeight - user.clientHeight         contents.style.height = `${h}px`         links.style.height = `${h}px`         posts.style.height = `${h}px`     })      function handleClick(evt, name) {         const items = document.querySelectorAll('.con-menu button')         const el = evt.target         items.forEach((item) => {             item.classList.remove('active')         })         el.classList.add('active')         const elScroll = document.querySelector(`.${name}`)         contents.scrollTo(elScroll.offsetLeft, 0)     }      contents.addEventListener('scroll', (evt) => {         if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {             menu.querySelector('button:nth-child(1)').classList.remove('active')             menu.querySelector('button:nth-child(2)').classList.add('active')             menu.querySelector('button:nth-child(3)').classList.remove('active')         } else if (evt.target.scrollLeft < window.innerWidth / 2) {             menu.querySelector('button:nth-child(1)').classList.add('active')             menu.querySelector('button:nth-child(2)').classList.remove('active')             menu.querySelector('button:nth-child(3)').classList.remove('active')         } else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {             menu.querySelector('button:nth-child(2)').classList.remove('active')             menu.querySelector('button:nth-child(3)').classList.add('active')         }     }) </script>    <style>     body {         --primary: 25,91,255;         --color: 44, 62, 80;         display: flex;         align-items: flex-start;         justify-content: center;         height: 100vh;         background: #f4f7f8;         height: calc(var(--vh, 1vh) * 100);         overflow: hidden;         color: rgb(var(--color));     }     * {         list-style: none;         outline: none;         padding: 0;         margin: 0;         font-family: 'Playfair Display', serif;         box-sizing: border-box;     }     .content {         width: 100%;         display: flex;         align-items: center;         justify-content: center;         flex-direction: column;         overflow: hidden;     }     .con-user {         padding-top: 10px;         width: 100%;         position: relative;         display: flex;         align-items: center;         justify-content: center;         flex-direction: column;         background: #fff;         padding-bottom: 10px;         border-radius: 0px 0px 40px 0px;     }     .con-user .title {         text-align: center;         width: 100%;     }     .con-user .title h1 {         font-size: 1.1rem;         padding: 0px 0px;     }     .con-user .title p {         font-size: .9rem;         opacity: .6;         padding: 6px 10px;     }     .con-user .title p a {         color: rgb(var(--text));     }     .avatar img {         width: 100px;         border-radius: 30px;     }     .con-menu {         display: flex;         align-items: center;         justify-content: space-between;         padding: 10px;         max-width: 500px;         margin: auto;         width: 100%;         position: relative;         z-index: 10;         box-shadow: 0px 15px 20px -5px rgba(0,0,0,.08);         border-radius: 0px 0px 30px 30px;     }     .con-menu button {         padding: 12px;         width: calc(50% - 4px);         border: 0px;         background: transparent;         font-weight: bold;         color: rgb(var(--text));         font-size: 1rem;         transition: all .25s ease;         box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);         border-radius: 16px;         z-index: 2;     }     .con-menu button.active {         background: #fff;         box-shadow: 0px 5px 25px 0px rgba(0,0,0,.06);         color: rgb(var(--primary));         /* transform: translate(0,-5px); */     }     .con-contents {         width: 100%;         overflow-x: auto;         overflow-y: hidden;         display: flex;         align-items: flex-start;         justify-content: flex-start;         scroll-snap-type: x mandatory;         scroll-behavior: smooth;         flex: 1;         height: 100%;         position: relative;         max-width: 500px;     }     .con-posts {         min-width: 100%;         scroll-snap-align: center;         overflow: auto;         padding-bottom: 30px;         max-width: 500px;     }     .con-posts .post {         width: calc(100% - 40px);         overflow: hidden;         box-sizing: border-box;         display: block;         margin: 20px;         position: relative;         color: rgb(var(--text));         border-radius: 30px;         box-shadow: 0px 5px 30px 0px rgba(0,0,0,.08);         margin-top: 20px;         margin-bottom: 20px;     }     .con-file {         width: 100%;         padding-bottom: 100%;         height: 0;     }     .con-posts .post img {         width: 100%;         position: absolute;         top: 50%;         left: 0px;         transform: translate(0,-50%);     }     .con-posts .post footer {         position: absolute;         bottom: 0px;         z-index: 10;         padding: 10px 20px;     }     .con-posts .post footer h3 {         display: flex;         align-items: center;         justify-content: flex-start;     }     .con-posts .post footer h3 i {         margin-right: 5px;         font-size: 1.4rem;     }     .con-posts .post .effect {         position: absolute;         bottom: 0px;         height: 150px;         width: 100%;         background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(0,0,0,0.001) 100%);      }     .con-links {         display: flex;         align-items: flex-start;         justify-content: flex-start;         flex-direction: column;         padding: 15px 20px;         padding-top: 0px;         max-width: 500px;         width: 100%;         margin: auto;         min-width: 100%;         scroll-snap-align: center;         flex: 1;         overflow: auto;         padding-top: 20px;     }     .con-links a {         display: block;         width: 100%;         padding: 18px 22px;         text-decoration: none;         font-size: 1rem;         color: #fff;         display: flex;         align-items: center;         justify-content: center;         background: rgb(var(--primary));         margin-bottom: 16px;         border-radius: 25px;         position: relative;         box-shadow: 0px 10px 30px 0px rgba(var(--primary), .15);     }     .con-links a:last-child {         margin-bottom: 40px;     }     .con-links a img {         max-width: 22px;         position: absolute;         left: 20px;     }     .con-links a svg {         width: 22px;         fill: #fff;         position: absolute;         left: 20px;     }     .con-links a i {         font-size: 1.6rem;         position: absolute;         left: 20px;         /* margin-right: 8px; */     }     .con-links a span {         text-align: center;     }     .con-links a span p {         font-size: .8rem;     }      </style>   </body> </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOP Lahan – Department Produksi & Kultivasi Stroberi | Agrifarm 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red:    #c0392b;
+    --red2:   #e74c3c;
+    --dark:   #1a1a1a;
+    --mid:    #2d2d2d;
+    --card:   #f7f4f1;
+    --cream:  #fdf9f5;
+    --border: #e0d8d0;
+    --green:  #27ae60;
+    --amber:  #e67e22;
+    --mono:   'DM Mono', monospace;
+    --serif:  'DM Serif Display', serif;
+    --body:   'Lato', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--body);
+    background: var(--cream);
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--dark);
+    color: #fff;
+    padding: 60px 50px 50px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 340px; height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(192,57,43,.35) 0%, transparent 70%);
+  }
+  .cover-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .logo-circle {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--red);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px; color: #fff;
+    flex-shrink: 0;
+  }
+  .org-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #aaa;
+    line-height: 1.4;
+  }
+  .cover h1 {
+    font-family: var(--serif);
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 400;
+    max-width: 580px;
+    margin-bottom: 8px;
+  }
+  .cover h1 em { color: var(--red2); font-style: normal; }
+  .cover-sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: #bbb;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+  }
+  .cover-meta {
+    display: flex; gap: 32px; flex-wrap: wrap;
+  }
+  .meta-item { line-height: 1.35; }
+  .meta-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  .meta-val {
+    font-size: 13px;
+    color: #eee;
+    font-weight: 700;
+  }
+  .cover-stripe {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red2) 50%, transparent 100%);
+  }
+
+  /* ── WRAPPER ── */
+  .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 32px 60px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 44px 0 22px;
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--red);
+    letter-spacing: .1em;
+    background: rgba(192,57,43,.08);
+    border: 1px solid rgba(192,57,43,.25);
+    border-radius: 4px;
+    padding: 3px 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── SOP CARD ── */
+  .sop-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  }
+  .sop-card-header {
+    padding: 16px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  .sop-icon {
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: var(--red);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .sop-card-header-text {}
+  .sop-code {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    color: #999;
+    letter-spacing: .08em;
+    margin-bottom: 2px;
+  }
+  .sop-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .sop-body {
+    padding: 18px 22px;
+  }
+
+  /* meta row */
+  .sop-meta-row {
+    display: flex; flex-wrap: wrap; gap: 20px;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .sop-meta-item {}
+  .sop-meta-label {
+    font-family: var(--mono);
+    font-size: 8.5px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .sop-meta-val {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--mid);
+  }
+
+  /* tujuan */
+  .tujuan-box {
+    background: rgba(39,174,96,.07);
+    border-left: 3px solid var(--green);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    color: #1d5a3a;
+  }
+  .tujuan-box strong { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; color: var(--green); display: block; margin-bottom: 3px; }
+
+  /* steps */
+  .steps-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  .steps { list-style: none; }
+  .step-item {
+    display: flex;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid #f0ebe4;
+    align-items: flex-start;
+  }
+  .step-item:last-child { border-bottom: none; }
+  .step-n {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step-text { font-size: 13px; line-height: 1.55; flex: 1; }
+  .step-text strong { color: var(--mid); }
+  .step-note {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--amber);
+    background: rgba(230,126,34,.08);
+    border-radius: 4px;
+    padding: 2px 7px;
+  }
+
+  /* ruang dua kolom */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+  .col-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 13px 15px;
+  }
+  .col-box h4 {
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+  .col-box ul { padding-left: 16px; }
+  .col-box li { font-size: 12.5px; line-height: 1.6; }
+
+  /* warning box */
+  .warn-box {
+    background: rgba(192,57,43,.05);
+    border: 1px solid rgba(192,57,43,.2);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 12.5px;
+    color: #7a1a1a;
+  }
+  .warn-box strong { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; color: var(--red); display: block; margin-bottom: 3px; }
+
+  /* ── TABLE ── */
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12.5px; }
+  thead tr { background: var(--dark); color: #fff; }
+  thead th { padding: 9px 12px; text-align: left; font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; font-weight: 500; }
+  tbody tr:nth-child(even) { background: var(--card); }
+  tbody td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 500;
+  }
+  .tag-green { background: rgba(39,174,96,.12); color: #1a7a42; }
+  .tag-amber { background: rgba(230,126,34,.12); color: #a05a00; }
+  .tag-red   { background: rgba(192,57,43,.12); color: #8b1a1a; }
+  .tag-blue  { background: rgba(41,128,185,.12); color: #1a4a70; }
+
+  /* footer */
+  .doc-footer {
+    margin-top: 50px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-left { font-family: var(--mono); font-size: 10px; color: #bbb; line-height: 1.6; }
+  .footer-right { text-align: right; font-family: var(--mono); font-size: 10px; color: #bbb; }
+
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .cover { page-break-after: always; }
+    .sop-card { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ COVER ═══════════════════ -->
+<div class="cover">
+  <div class="cover-top">
+    <div class="logo-circle">🍓</div>
+    <div class="org-label">Agrifarm Unpad<br>Kebun Ciparanje · Fakultas Pertanian</div>
+  </div>
+  <h1>Standar Operasional<br>Prosedur <em>Lahan</em></h1>
+  <div class="cover-sub">Department Produksi Kultivasi · Pembudidayaan Berkelanjutan</div>
+  <div class="cover-meta">
+    <div class="meta-item"><div class="meta-label">Kode Dok</div><div class="meta-val">SOP-DPK-001</div></div>
+    <div class="meta-item"><div class="meta-label">Department</div><div class="meta-val">Produksi & Kultivasi</div></div>
+    <div class="meta-item"><div class="meta-label">Berlaku Mulai</div><div class="meta-val">Mei 2025</div></div>
+    <div class="meta-item"><div class="meta-label">Dibuat Oleh</div><div class="meta-val">Kepala dan Wakil department Produksi & Kultivasi</div></div>
+    <div class="meta-item"><div class="meta-label">Versi</div><div class="meta-val">1.0</div></div>
+  </div>
+  <div class="cover-stripe"></div>
+</div>
+
+<!-- ═══════════════════ BODY ═══════════════════ -->
+<div class="wrapper">
+
+  <!-- ── DAFTAR SOP ── -->
+  <div class="section-header">
+    <span class="section-num">INDEKS</span>
+    <h2>Daftar SOP dalam Dokumen Ini</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Kode</th>
+        <th>Judul SOP</th>
+        <th>Frekuensi</th>
+        <th>Prioritas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-01</span></td>
+        <td>Pemeriksaan & Persiapan Pra-Masuk Lahan</td>
+        <td>Setiap kunjungan</td>
+        <td><span class="tag tag-red">Wajib</span></td>
+      </tr>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-02</span></td>
+        <td>Monitoring Harian Tanaman Stroberi Polybag</td>
+        <td>Harian</td>
+        <td><span class="tag tag-red">Wajib</span></td>
+      </tr>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-03</span></td>
+        <td>Pengairan & Pemupukan Tanaman</td>
+        <td>2–3×/minggu</td>
+        <td><span class="tag tag-red">Wajib</span></td>
+      </tr>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-04</span></td>
+        <td>Pengendalian Hama & Penyakit (PHT)</td>
+        <td>Kondisional</td>
+        <td><span class="tag tag-amber">Penting</span></td>
+      </tr>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-05</span></td>
+        <td>Pemanenan Buah Stroberi</td>
+        <td>Saat panen</td>
+        <td><span class="tag tag-green">Terjadwal</span></td>
+      </tr>
+      <tr>
+        <td><span style="font-family:var(--mono);font-size:11px">SOP-DPK-06</span></td>
+        <td>Pencatatan & Pelaporan Tim</td>
+        <td>Mingguan</td>
+        <td><span class="tag tag-blue">Administratif</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 01 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-01</span>
+    <h2>Pemeriksaan & Persiapan Pra-Masuk Lahan</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">🔍</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-01 · Rev. 1.0</div>
+        <div class="sop-title">Pemeriksaan & Persiapan Pra-Masuk Lahan</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Kepala Department Produksi</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pelaksana</div><div class="sop-meta-val">Seluruh anggota Agrifarm</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Waktu Estimasi</div><div class="sop-meta-val">15–20 menit</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Berlaku</div><div class="sop-meta-val">Setiap kunjungan ke lahan</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Memastikan seluruh anggota Tim dalam kondisi siap, membawa perlengkapan yang benar, dan lahan dalam kondisi aman untuk memulai aktivitas budidaya stroberi polybag.
+      </div>
+
+      <div class="steps-label">Alur Prosedur</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Briefing awal</strong> — Kepala / Wakil department mengumpulkan seluruh anggota yang hadir sebelum masuk lahan. Catat kehadiran di buku/hp.
+            <span class="step-note">⏱ Maks. 5 menit</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Cek kondisi cuaca & waktu</strong> — Pastikan kondisi cuaca memungkinkan untuk kegiatan di lahan (tidak hujan lebat, tidak petir). Waktu ideal kunjungan: pagi hari 06.30–09.00 atau sore 15.30–17.30.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Persiapan APD & alat</strong> — Wajibkan penggunaan sarung tangan, sepatu boot atau sepatu tertutup, dan topi/pelindung kepala. Bawa alat-alat sesuai kegiatan yang direncanakan (lihat daftar alat di bawah).</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Pemeriksaan kondisi gerbang & akses lahan</strong> — Pastikan akses ke Kebun Ciparanje tidak terhalang dan kondisi aman. Catat waktu masuk lahan.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">5</div>
+          <div class="step-text"><strong>Peninjauan awal area polybag</strong> — Sebelum memulai aktivitas teknis, lakukan pemutaran sekilas (± 5 menit) untuk mengidentifikasi kondisi abnormal yang perlu segera ditangani.</div>
+        </li>
+      </ul>
+
+      <div class="two-col">
+        <div class="col-box">
+          <h4>Perlengkapan Wajib Bawa</h4>
+          <ul>
+            <li>Sarung tangan karet/latex</li>
+            <li>Sepatu boot / sepatu tertutup</li>
+            <li>Topi/pelindung kepala</li>
+            <li>Logbook/form pencatatan</li>
+            <li>Alat tulis</li>
+            <li>Botol minum pribadi</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <h4>Alat Teknis (sesuai kegiatan)</h4>
+          <ul>
+            <li>Selang/gembor (pengairan)</li>
+            <li>Gunting pangkas steril</li>
+            <li>Sprayer (pestisida/fungisida)</li>
+            <li>Timbangan & wadah panen</li>
+            <li>Termometer/hygrometer</li>
+            <li>Kamera/HP dokumentasi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 02 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-02</span>
+    <h2>Monitoring Harian Tanaman Stroberi Polybag</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">🌿</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-02 · Rev. 1.0</div>
+        <div class="sop-title">Monitoring Harian Tanaman Stroberi Polybag</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Kepala Department / Anggota Piket</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Waktu Estimasi</div><div class="sop-meta-val">30–45 menit</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Frekuensi</div><div class="sop-meta-val">Setiap hari (minimal 6×/minggu)</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Mendeteksi dini perubahan kondisi tanaman stroberi polybag (pertumbuhan, gejala stres, hama, penyakit) agar tindakan korektif dapat dilakukan sesegera mungkin.
+      </div>
+
+      <div class="steps-label">Alur Prosedur</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Pemeriksaan visual menyeluruh</strong> — Periksa setiap polybag secara berurutan. Amati daun (warna, bercak, layu), batang (busuk, rebah), bunga, dan buah yang sedang berkembang.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Cek media tanam & polybag</strong> — Periksa kelembaban media tanam (tidak terlalu kering/jenuh air), kondisi fisik polybag (robek, tertumpah), dan posisi polybag (tegak, teratur).</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Identifikasi tanaman bermasalah</strong> — Tandai polybag yang menunjukkan gejala abnormal dengan penanda warna. Foto kondisi tersebut untuk dokumentasi.
+            <span class="step-note">📸 Foto wajib jika ada gejala</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Pencatatan hasil monitoring</strong> — Catat temuan di Form Monitoring Harian: jumlah tanaman sehat, jumlah bermasalah, jenis masalah teridentifikasi, kondisi cuaca saat itu.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">5</div>
+          <div class="step-text"><strong>Eskalasi ke Kepala Department</strong> — Jika ditemukan gejala serangan massal (>5 polybag) atau penyakit yang belum teridentifikasi, segera laporkan ke Kepala Department dalam hari yang sama.</div>
+        </li>
+      </ul>
+
+      <table style="margin-top:16px">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Kondisi Normal</th>
+            <th>Tindakan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Warna daun</td>
+            <td>Hijau segar, tidak pucat</td>
+            <td>Cek nutrisi jika kuning/pucat</td>
+          </tr>
+          <tr>
+            <td>Kelembaban media</td>
+            <td>Lembab, tidak becek</td>
+            <td>Siram / kurangi frekuensi air</td>
+          </tr>
+          <tr>
+            <td>Stolon / sulur</td>
+            <td>Terkontrol, tidak merambat berlebihan</td>
+            <td>Pangkas stolon berlebih</td>
+          </tr>
+          <tr>
+            <td>Bunga/buah</td>
+            <td>Bunga mekar normal, buah berkembang</td>
+            <td>Catat perkembangan, spot busuk buah</td>
+          </tr>
+          <tr>
+            <td>Hama (kutu, tungau)</td>
+            <td>Tidak ada koloni terlihat</td>
+            <td>→ Aktifkan SOP-DPK-04</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 03 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-03</span>
+    <h2>Pengairan & Pemupukan Tanaman</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">💧</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-03 · Rev. 1.0</div>
+        <div class="sop-title">Pengairan & Pemupukan Tanaman Stroberi Polybag</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Anggota Tim (terjadwal)</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pengairan</div><div class="sop-meta-val">Setiap hari / 2× sehari (musim kemarau)</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pemupukan</div><div class="sop-meta-val">1× seminggu (sesuai fase tumbuh)</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Menjaga kecukupan air dan nutrisi tanaman stroberi dalam polybag agar pertumbuhan vegetatif dan generatif berlangsung optimal.
+      </div>
+
+      <div class="steps-label">Prosedur Pengairan</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Periksa kondisi media sebelum menyiram</strong> — Masukkan jari ± 2 cm ke media tanam. Jika masih basah, tunda pengairan. Siram hanya ketika media mulai terasa kering.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Teknik penyiraman</strong> — Siram di bagian pangkal tanaman (zona akar), bukan di atas daun/bunga. Gunakan gembor dengan kepala halus atau drip langsung ke media.
+            <span class="step-note">⚠ Hindari membasahi mahkota tanaman → rentan busuk</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Volume air per polybag</strong> — ± 200–300 ml per sesi penyiraman (polybag 10 liter). Pastikan air meresap sempurna, tidak menggenang di atas permukaan.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Waktu pengairan ideal</strong> — Pagi hari (06.30–08.00) atau sore (16.00–17.00). Hindari penyiraman siang hari saat terik untuk mencegah evaporasi berlebih dan heat stress.</div>
+        </li>
+      </ul>
+
+      <div class="steps-label" style="margin-top:18px">Prosedur Pemupukan</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Tentukan jenis pupuk sesuai fase</strong> — Fase vegetatif: pupuk N tinggi (urea/NPK). Fase generatif/berbunga: pupuk P & K tinggi. Pupuk daun dapat diberikan 2 minggu sekali.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Larutkan pupuk sesuai dosis</strong> — Ikuti dosis anjuran pada kemasan. Catat jenis, dosis, dan tanggal pemupukan di Form Pemupukan.
+            <span class="step-note">📋 Dosis harus dicatat!</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Aplikasi pupuk</strong> — Pupuk cair: siramkan ke zona akar. Pupuk granul: tabur di sekitar tanaman lalu siram. Pupuk daun: semprotkan ke permukaan bawah daun saat pagi.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Evaluasi respon tanaman</strong> — Amati perubahan warna dan pertumbuhan 3–5 hari setelah pemupukan. Laporkan jika ada gejala kelebihan pupuk (daun terbakar, layu tiba-tiba).</div>
+        </li>
+      </ul>
+
+      <div class="warn-box">
+        <strong>⚠ Perhatian</strong>
+        Jangan memberikan pupuk saat tanaman dalam kondisi stres air (kekeringan). Siram terlebih dahulu, tunggu 1–2 jam, baru lakukan pemupukan agar tidak merusak sistem perakaran.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 04 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-04</span>
+    <h2>Pengendalian Hama & Penyakit (PHT)</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">🛡️</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-04 · Rev. 1.0</div>
+        <div class="sop-title">Pengendalian Hama & Penyakit Terpadu (PHT)</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Kepala Department Produksi</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pemicu</div><div class="sop-meta-val">Ditemukan gejala serangan hama/penyakit</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pendekatan</div><div class="sop-meta-val">PHT – Kimiawi sebagai opsi terakhir</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Mengendalikan organisme pengganggu tanaman (OPT) pada stroberi polybag dengan pendekatan PHT — mendahulukan mekanis dan biologis sebelum kimiawi — untuk menjaga kualitas dan keamanan produk.
+      </div>
+
+      <div class="steps-label">Alur Pengendalian</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Identifikasi jenis OPT</strong> — Amati gejala dengan seksama. Foto dan catat di logbook. Jika tidak dapat diidentifikasi sendiri, konsultasikan ke dosen/senior Agrifarm.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Isolasi tanaman terinfeksi</strong> — Pindahkan polybag yang terserang ke area karantina (jauh dari tanaman sehat) untuk mencegah penyebaran lebih lanjut.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Pengendalian mekanis dahulu</strong> — Potong dan buang bagian yang terinfeksi dengan gunting steril. Gunting didesinfeksi dengan alkohol 70% setiap kali berpindah tanaman.
+            <span class="step-note">✂ Sterilisasi alat selalu!</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Pengendalian biologis</strong> — Jika tersedia, gunakan agensia hayati (misal: larutan bawang putih, ekstrak nimba/neem, trichoderma) sebagai semprot preventif/kuratif awal.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">5</div>
+          <div class="step-text"><strong>Pengendalian kimiawi (jika diperlukan)</strong> — Gunakan pestisida/fungisida terdaftar hanya jika pengendalian mekanis & biologis tidak efektif. Wajib pakai masker, sarung tangan, dan kacamata pelindung. Catat jenis bahan aktif dan dosis yang digunakan.
+            <span class="step-note">⚠ APD lengkap wajib dipakai</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">6</div>
+          <div class="step-text"><strong>Evaluasi efektivitas</strong> — Periksa kondisi tanaman 3–5 hari setelah perlakuan. Jika tidak ada perbaikan, eskalasi ke kepala dan wakil Department untuk keputusan lebih lanjut.</div>
+        </li>
+      </ul>
+
+      <table style="margin-top:16px">
+        <thead>
+          <tr><th>OPT Umum Stroberi</th><th>Gejala</th><th>Pengendalian Utama</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kutu daun (<em>Aphis</em> spp.)</td><td>Daun keriting, permukaan sticky</td><td>Semprot sabun insektisida / nimba</td></tr>
+          <tr><td>Tungau (<em>Tetranychus</em> spp.)</td><td>Daun berbercak cokelat, serbuk halus</td><td>Semprot akarisida / cuci daun</td></tr>
+          <tr><td>Busuk mahkota (<em>Phytophthora</em>)</td><td>Layu tiba-tiba, akar cokelat</td><td>Kurangi kelembaban, fungisida</td></tr>
+          <tr><td>Busuk buah abu (<em>Botrytis</em>)</td><td>Buah berjamur abu-abu</td><td>Sanitasi buah busuk, fungisida</td></tr>
+          <tr><td>Ulat / belalang</td><td>Daun berlubang tidak teratur</td><td>Petik manual, insektisida organik</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 05 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-05</span>
+    <h2>Pemanenan Buah Stroberi</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">🍓</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-05 · Rev. 1.0</div>
+        <div class="sop-title">Pemanenan Buah Stroberi Polybag</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Wakil & Kepala Department + Tim Panen</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Waktu Panen</div><div class="sop-meta-val">Pagi hari (06.30–10.00)</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Indikator Panen</div><div class="sop-meta-val">75–100% permukaan buah merah</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Memanen buah stroberi pada tingkat kematangan optimal dengan cara yang meminimalkan kerusakan fisik buah dan tanaman, serta menjaga kualitas untuk tahap hilir (distribusi/konsumsi).
+      </div>
+
+      <div class="steps-label">Alur Prosedur Panen</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Penentuan kematangan</strong> — Panen saat buah 75–100% berwarna merah merata (tergantung tujuan: konsumsi langsung vs distribusi jauh). Buah hijau atau putih belum layak panen.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Persiapan alat panen</strong> — Siapkan gunting/pisau panen yang bersih dan tajam, serta wadah berlapis kain/kertas untuk menampung buah. Jangan gunakan wadah terlalu dalam (maks. 2–3 lapis buah).</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Teknik memanen</strong> — Pegang buah dengan lembut, gunting tangkai buah ± 1–2 cm dari pangkalnya. Jangan menarik atau memutar buah secara paksa karena dapat merusak mahkota tanaman.
+            <span class="step-note">✂ Potong tangkai, jangan tarik buah</span>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Sortasi langsung di lapangan</strong> — Pisahkan buah: Grade A (mulus, bentuk sempurna), Grade B (ada cacat minor), dan afkir (busuk/sangat cacat). Buah afkir dibuang jauh dari lahan atau dikubur.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">5</div>
+          <div class="step-text"><strong>Penanganan pasca panen awal</strong> — Simpan buah di tempat teduh, hindari terkena sinar matahari langsung. Segera bawa ke area penanganan pasca panen. Jangan tumpuk berlebihan.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">6</div>
+          <div class="step-text"><strong>Pencatatan hasil panen</strong> — Catat: tanggal panen, jumlah polybag yang dipanen, berat total per grade, kondisi umum buah. Laporkan ke Kepala Department hari yang sama.
+            <span class="step-note">📋 Data panen masuk ke laporan mingguan</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="warn-box">
+        <strong>⚠ Larangan saat panen</strong>
+        Dilarang memanen saat hujan atau segera setelah hujan (buah mudah busuk). Dilarang menyentuh buah tanpa mencuci tangan terlebih dahulu. Hindari menekan atau melempar buah ke dalam wadah.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SOP 06 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-num">SOP-DPK-06</span>
+    <h2>Pencatatan & Pelaporan Department</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sop-card">
+    <div class="sop-card-header">
+      <div class="sop-icon">📋</div>
+      <div class="sop-card-header-text">
+        <div class="sop-code">SOP-DPK-06 · Rev. 1.0</div>
+        <div class="sop-title">Pencatatan Lapangan & Pelaporan Mingguan Tim</div>
+      </div>
+    </div>
+    <div class="sop-body">
+      <div class="sop-meta-row">
+        <div class="sop-meta-item"><div class="sop-meta-label">Penanggung Jawab</div><div class="sop-meta-val">Kepala Department Produksi</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Pencatatan Harian</div><div class="sop-meta-val">Setiap kunjungan lahan</div></div>
+        <div class="sop-meta-item"><div class="sop-meta-label">Laporan Mingguan</div><div class="sop-meta-val">Setiap hari Minggu/Senin</div></div>
+      </div>
+
+      <div class="tujuan-box">
+        <strong>Tujuan</strong>
+        Mendokumentasikan seluruh kegiatan budidaya secara sistematis sebagai basis evaluasi kinerja tim, pengambilan keputusan teknis, dan transparansi ke komunitas Agrifarm.
+      </div>
+
+      <div class="steps-label">Item Wajib Dicatat Setiap Kunjungan</div>
+      <div class="two-col">
+        <div class="col-box">
+          <h4>Data Teknis</h4>
+          <ul>
+            <li>Tanggal & waktu kunjungan</li>
+            <li>Jumlah polybag aktif / total</li>
+            <li>Kondisi tanaman (sehat/sakit/mati)</li>
+            <li>Kegiatan yang dilakukan</li>
+            <li>Jenis & dosis input (pupuk, pestisida)</li>
+            <li>Hasil panen (berat, grade)</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <h4>Data Pendukung</h4>
+          <ul>
+            <li>Kondisi cuaca</li>
+            <li>Anggota yang hadir</li>
+            <li>Masalah/kendala yang ditemukan</li>
+            <li>Foto dokumentasi kondisi lahan</li>
+            <li>Rekomendasi tindak lanjut</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="steps-label" style="margin-top:18px">Alur Pelaporan Mingguan</div>
+      <ul class="steps">
+        <li class="step-item">
+          <div class="step-n">1</div>
+          <div class="step-text"><strong>Rekap data harian</strong> — Kumpulkan semua catatan harian dalam satu minggu. Tabulasikan: jumlah kunjungan, total panen, kejadian OPT, input yang diberikan.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">2</div>
+          <div class="step-text"><strong>Buat laporan ringkas</strong> — Tulis dalam format laporan tim: Kondisi Umum Lahan → Kegiatan Dilakukan → Hasil/Output → Masalah → Rekomendasi Minggu Depan.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">3</div>
+          <div class="step-text"><strong>Distribusi laporan</strong> — Kirim laporan ke grup WhatsApp/platform komunitas Agrifarm. Simpan satu salinan di arsip tim (fisik atau digital).</div>
+        </li>
+        <li class="step-item">
+          <div class="step-n">4</div>
+          <div class="step-text"><strong>Evaluasi mingguan (jika ada rapat)</strong> — Presentasikan perkembangan dalam rapat koordinasi komunitas. Bawa foto dokumentasi sebagai pendukung.</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <div class="doc-footer">
+    <div class="footer-left">
+      Dokumen ini merupakan milik Department Produksi Kultivasi<br>
+      <strong>Agrifarm · Kebun Ciparanje, Fakultas Pertanian UNPAD</strong><br>
+      Revisi dokumen disetujui oleh Kepala & Wakil Produksi Kultivasi
+    </div>
+    <div class="footer-right">
+      SOP-DPK-001 · Ver 1.0<br>
+      Berlaku: Mei 2026 - Akhir kabinet<br>
+      Halaman 1 dari 1
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
